@@ -1,0 +1,21 @@
+version: "3.3"
+services:
+  web:
+    build: ./ui
+    ports:
+      - "3000:3000"
+      - "80:3000"
+    depends_on:
+      - rest
+  rest:
+    build: ./rest-server
+    ports:
+      - "8000:8000"
+    environment:
+      - GRPC_URI=localhost:50051
+    depends_on:
+      - grpc
+  grpc:
+    build: ./grpc-server
+    ports:
+      - "50051:50051"

@@ -1,0 +1,7 @@
+pytest==6.0.2
+asgi-lifespan==1.0.1
+httpx==0.14.3
+
+#editor
+flake8
+black

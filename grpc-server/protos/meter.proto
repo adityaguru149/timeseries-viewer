@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package data_app;
+import "google/protobuf/timestamp.proto";
+
+message SearchRequest {
+  google.protobuf.Timestamp start = 1;
+  int32 limit = 2;
+  string precision = 3;
+}
+
+message SearchResponse {
+  repeated google.protobuf.Timestamp time = 1;
+  repeated double usage = 2;
+  string message = 3;
+}
+
+service SearchService {
+  rpc Search(SearchRequest) returns (SearchResponse);
+}
+

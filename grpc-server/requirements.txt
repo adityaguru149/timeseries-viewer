@@ -1,0 +1,4 @@
+pandas==1.1.2
+grpcio==1.28.1
+grpcio-tools==1.28.1
+proto-plus==1.10.0
