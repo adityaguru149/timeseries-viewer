@@ -14,6 +14,7 @@ docker-compose up --build
 - **gRPC:** Very high performance claims
 - **REST:** Browser compatible
 - **3 separate containers:** To be able to scale independently when requied.
+- **pre built pandas container:** Pandas (+numpy) build was taking a long
 
 ## Challenges
 
@@ -23,14 +24,12 @@ docker-compose up --build
 
 ## TODO
 
-- BUG: Unable to connect to grpc from another docker container
 - Better Error handling and logs
-- Print gRPC server started
-- Docker Compose
 - [Move React environment variables to runtime/loadtime configurable](https://www.freecodecamp.org/news/how-to-implement-runtime-environment-variables-with-create-react-app-docker-and-nginx-7f9d42a91d70/)
 - Various aggregation levels (15min, 1hr, 1day, 5day, 1week, 1month)
 - timezone support?
 - Multiple files - belonging to different locations/countries. If location not provided, get aggregated?
 - Support to add files
 - CI/CD setup
-- Performance Testing and Optimisations (like Dask may be)
+- Performance Testing and Optimisations (like Dask?, react dynamic import?)
+- React build performance
