@@ -5,7 +5,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { getData, AWAITING } from "../state_mgmt/MeterAction";
 
 export default function UsageViewer(props) {
-  const [date, setDate] = useState(Date.UTC(2019, 0, 15, 0, 0, 0));
+  const [date, setDate] = useState(Date.UTC(2019, 1, 31, 7, 45, 0));
   const [numData, setNumData] = useState(10);
   const [tick, setTick] = useState("15min");
   const meterChart = useSelector((state) => state.meterChart);

@@ -12,7 +12,7 @@ services:
     ports:
       - "8000:8000"
     environment:
-      - GRPC_URI=localhost:50051
+      - GRPC_URI=grpc:50051
     depends_on:
       - grpc
   grpc:

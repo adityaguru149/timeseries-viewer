@@ -1,2 +1,8 @@
 pytest==6.1.0
 pytest-grpc==0.8.0
+# pandas is supplied by the docker image
+pandas>=1.1.4
+
+#editor
+flake8
+black

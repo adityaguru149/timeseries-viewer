@@ -3,8 +3,8 @@
 ## To run locally
 
 ```bash
-export GRPC_URI=localhost:50051
 pip install -r requirements.txt
+export GRPC_URI=localhost:50051
 uvicorn main:app --host=0.0.0.0
 ```
 

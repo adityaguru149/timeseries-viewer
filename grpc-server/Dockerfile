@@ -1,4 +1,4 @@
-FROM python:3-slim
+FROM amancevice/pandas:1.1.4-slim
 
 COPY . ./be/
 WORKDIR be/
