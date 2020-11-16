@@ -25,6 +25,7 @@ docker-compose up --build
 ## TODO
 
 - Better Error handling and logs
+- https://github.com/arqex/react-datetime/issues/753
 - [Move React environment variables to runtime/loadtime configurable](https://www.freecodecamp.org/news/how-to-implement-runtime-environment-variables-with-create-react-app-docker-and-nginx-7f9d42a91d70/)
 - Various aggregation levels (15min, 1hr, 1day, 5day, 1week, 1month)
 - timezone support?
